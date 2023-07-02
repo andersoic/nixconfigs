@@ -1,3 +1,14 @@
+
+## My Notes:
+Install Nix: https://nixos.org/download.html#nix-install-macos
+Install Nix-Darwin: http://daiderd.com/nix-darwin/#install
+
+```
+git clone https://github.com/andersoic/nixconfigs
+cd nixconfigs
+darwin-rebuild switch --flake .#m2-macbook-pro
+```
+
 This is a boilerplate for someone wanting to build a Nix-Darwin flake.
 
 This is intended to be used as a starting point, so it would make most sense, to create a new template from this repository and modify it to fit your needs.

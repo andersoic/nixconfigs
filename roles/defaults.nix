@@ -10,19 +10,19 @@
   programs.nix-index.enable = true;
 
   # add nerd fonts
-  fonts.fonts = with pkgs; [
-    (nerdfonts.override { fonts = [ "Hack" "DroidSansMono" "Iosevka" ]; })
-  ];
+  #fonts.fonts = with pkgs; [
+  #(nerdfonts.override { fonts = [ "Hack" "DroidSansMono" "Iosevka" ]; })
+  #];
 
   #system-defaults.nix
-  system.keyboard = {
-    enableKeyMapping = true;
-    remapCapsLockToControl = true;
-  };
+  #system.keyboard = {
+  #enableKeyMapping = true;
+  #remapCapsLockToControl = true;
+  #};
   system.defaults = {
     dock = {
       autohide = true;
-      orientation = "bottom";
+      orientation = "left";
       showhidden = true;
       mineffect = "genie";
       launchanim = true;
@@ -56,7 +56,7 @@
     NSGlobalDomain = {
       AppleInterfaceStyle = "Dark"; # set dark mode
       AppleKeyboardUIMode = 3;
-      ApplePressAndHoldEnabled = false;
+      #ApplePressAndHoldEnabled = false;
       NSAutomaticCapitalizationEnabled = false;
       NSAutomaticDashSubstitutionEnabled = false;
       NSAutomaticPeriodSubstitutionEnabled = false;
@@ -64,7 +64,7 @@
       NSAutomaticSpellingCorrectionEnabled = false;
       NSNavPanelExpandedStateForSaveMode = true;
       NSNavPanelExpandedStateForSaveMode2 = true;
-      _HIHideMenuBar = true; # autohide top panel
+      #_HIHideMenuBar = true; # autohide top panel
     };
   };
    # Add flake support 
